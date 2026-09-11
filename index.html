@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike Air Zoom Pegasus 41</title>
+    <title>Document</title>
     <style>
-/* 1. The main box that locks everything together */
+            /* 1. The main box that locks everything together */
 .hero-container {
   position: relative;
   display: grid;
@@ -41,7 +41,7 @@
   align-items: flex-start; /* Aligns everything nicely to the left */
 }
 
-/* 4. Individual Clean Typographies */
+/* 4. Individual Clean Typographies (No top/left hacks!) */
 .Logo {
   width: 60px;
   height: auto;
@@ -113,26 +113,28 @@
   margin-top: auto; /* Pushes the technology box to the bottom area safely */
 }
 
-/* FIXED CSS: Cleaned up grid rules to let flexbox take over natively */
 .Final_container {
+  grid-column: 1 / -1; /* Forces the image to stretch across all 12 columns */
+  grid-row: 5;
   width: 100%;
-  max-width: 400px; /* Keeps the shoe image neatly proportioned */
   height: auto;
-  object-fit: contain;
-  display: block;
-  margin-bottom: 20px; /* Adds clean spacing below the image */
+  object-fit: cover;
+  display: flex;
+  top: 20px;
 }
+
+
     </style>
 </head>
 <body>
 
-<div class="hero-container">
-    <!-- FIXED PATH: Changed from local C:\ drive to relative web asset path -->
-    <img class="Image" src="bg-image.PNG" alt="Background">
+    <div class="hero-container">
+    <!-- Background Image -->
+    <img class="Image" src="C:\Users\sportsingest\Documents\Desktop\Nike Sample\bg-image.PNG" alt="Background">
     
     <!-- Text and Button Layer Overlapping the Image -->
     <div class="content-overlay">
-        <img class="Logo" src="download.PNG" alt="Logo">
+        <img class="Logo" src="C:\Users\sportsingest\Documents\Desktop\Nike Sample\download.PNG" alt="Logo">
         
         <h1 class="h1">Nike</h1>
         <h3 class="intro">I&nbspN&nbspT&nbspR&nbspO&nbspD&nbspU&nbspC&nbspI&nbspN&nbspG</h3>
@@ -144,13 +146,18 @@
         <form action="https://nike.com" target="_blank">
             <button type="submit" class="Shopnow">Shop Now <span>→</span></button>
         </form>
-        
-        <!-- FIXED PATH & POSITION: Repositioned under button, changed to web relative path -->
-        <img class="Final_container" src="images-removebg-preview.png" alt="Images">
+        <img class="Final_container" src="C:\Users\sportsingest\Documents\Desktop\Nike Sample\images-removebg-preview.png" alt="Images">
         
         <span class="Paragraph">The Pegasus 41 is built for runners who <br> want more -- more comfort, more support, <br> and more performance in every step.</span>
+        
+
+        <!-- Grouped technology block -->
     </div>
+    
 </div>
+
+
+
     
 </body>
 </html>
