@@ -16,8 +16,6 @@
   max-width: 1200px; /* Limits the layout from stretching infinitely on massive screens */
   margin: 0 auto;    /* Centers the entire block on the page */
   overflow: hidden;
-  min-height: 80vh; 
-  background-color: #1a1a1a; 
 }
 
 /* 2. The background image sits at the root layer */
@@ -28,7 +26,40 @@
   height: auto;
   object-fit: cover;
   display: block;
+  animation-name: fadeIn, float;
+  animation-duration: 1.2s, 4s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-delay: 0s, 1.2s;
+
+  opacity: 0; 
+  will-change: transform, opacity; 
+  }
+
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}  
+
 
 /* 3. The Content Overlay Layer (This physically locks your text on top of the image) */
 .content-overlay {
@@ -99,7 +130,40 @@
   transition: 0.2s ease;
   margin-bottom: 20px;
   color: white;
+  animation-name: fadeIn, float;
+  animation-duration: 1.2s, 4s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-delay: 0s, 1.2s;
+
+  opacity: 0; 
+  will-change: transform, opacity; 
+  }
+
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}  
+
 
 .Shopnow:hover {
   background-color: #333;
@@ -125,9 +189,40 @@
   object-fit: cover;
   display: flex;
   top: 20px;
-  
+  animation-name: fadeIn, float;
+  animation-duration: 1.2s, 4s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-delay: 0s, 1.2s;
+
+  opacity: 0; 
+  will-change: transform, opacity; 
+  }
+
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}  
+  
 
 
 
@@ -141,7 +236,7 @@
     
     <!-- Text and Button Layer Overlapping the Image -->
     <div class="content-overlay">
-        <img class="Logo" src="./download-1.png" alt="Logo">
+        <img class="Logo" src="C:\Users\sportsingest\Documents\Desktop\Nike Sample\download-1.png" alt="Logo">
         
         <h1 class="h1">Nike</h1>
         <h3 class="intro">I&nbspN&nbspT&nbspR&nbspO&nbspD&nbspU&nbspC&nbspI&nbspN&nbspG</h3>
@@ -153,7 +248,7 @@
         <form action="https://nike.com" target="_blank">
             <button type="submit" class="Shopnow">Shop Now <span>→</span></button>
         </form>
-        <img class="Final_container" src="./images-removebg-preview.png" alt="Images">
+        <img class="Final_container" src="C:\Users\sportsingest\Documents\Desktop\Nike Sample\images-removebg-preview.png" alt="Images">
         
 
         <!-- Grouped technology block -->
